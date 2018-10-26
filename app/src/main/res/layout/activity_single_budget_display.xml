@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppBackground"
+    tools:context=".SingleBudgetDisplay">
+
+    <TextView
+        android:id="@+id/SBD_budgetName"
+        style="@style/CustomTextViewTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/SBD_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/SBD_budgetAmount"
+        style="@style/CustomTextViewTheme2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/SBD_budgetAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SBD_budgetName" />
+
+    <TextView
+        android:id="@+id/SBD_balanceLeft"
+        style="@style/CustomTextViewTheme2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/SBD_balanceLeft"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SBD_budgetAmount" />
+
+    <ListView
+        android:id="@+id/SBD_historyView"
+        style="@style/CustomListTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/SBD_resetButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SBD_balanceLeft"
+        tools:listitem="@layout/layout_history_display" />
+
+    <Button
+        android:id="@+id/SBD_resetButton"
+        style="@style/CustomButtonTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="2dp"
+        android:onClick="SBD_onResetBudgetClick"
+        android:text="@string/SBD_resetButton"
+        app:layout_constraintBottom_toTopOf="@+id/SBD_changeBudgetAmount"
+        app:layout_constraintEnd_toStartOf="@+id/SBD_delete"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/SBD_delete"
+        style="@style/CustomButtonTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="4dp"
+        android:onClick="SBD_onDeleteButtonClick"
+        android:text="@string/SBD_deleteButton"
+        app:layout_constraintBottom_toTopOf="@+id/SBD_changeBudgetAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/SBD_resetButton" />
+
+    <Button
+        android:id="@+id/SBD_changeBudgetAmount"
+        style="@style/CustomButtonTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="2dp"
+        android:onClick="SBD_onChangeAmountButtonClick"
+        android:text="@string/SBD_changeBudgetAmount"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/SBD_addManualHistory"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/SBD_addManualHistory"
+        style="@style/CustomButtonTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="4dp"
+        android:onClick="SBD_onManualAddButtonClick"
+        android:text="@string/SBD_addManualHistory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/SBD_changeBudgetAmount" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/OM_signIn"
+        android:title="@string/OM_signInString" />
+    <item android:id="@+id/OM_SignOut"
+        android:title="@string/OM_SignOutString" />
+    <item android:id="@+id/OM_deleteAccount"
+        android:title="@string/OM_deleteAccountString" />
+    <item android:id="@+id/OM_addNewAccount"
+        android:title="@string/OM_addNewAccountString" />
+    <item android:id="@+id/OM_accountsList"
+        android:title="@string/accountsListString" />
+    <item android:id="@+id/OM_budgetPanel"
+        android:title="@string/OM_budgetPanelString" />
+    <item android:id="@+id/OM_createNewBudget"
+        android:title="@string/OM_createNewBudgetString" />
+    <item android:id="@+id/OM_transferMoney"
+        android:visible="false"
+        android:title="@string/OM_transferMoneyString" />
+</menu>

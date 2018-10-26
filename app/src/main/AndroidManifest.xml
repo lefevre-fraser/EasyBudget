@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.budget.lefevre.easybudget">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AccountsDisplay" />
+        <activity android:name=".SingleAccountDisplay" />
+        <activity android:name=".AddNewAccount" />
+        <activity android:name=".TransferMoneyActivity" />
+        <activity android:name=".DepositWithdraw" />
+        <activity android:name=".BudgetPanel" />
+        <activity android:name=".CreateNewBudget" />
+        <activity
+            android:name=".ConfirmationPopUp"
+            android:theme="@style/PopupTheme" />
+        <activity
+            android:name=".HistoryEditActivity"
+            android:theme="@style/PopupTheme" />
+        <activity
+            android:name=".HistoryEditTransfer"
+            android:theme="@style/PopupTheme" />
+        <activity android:name=".SingleBudgetDisplay" />
+        <activity
+            android:name=".SimpleValueChange"
+            android:theme="@style/PopupTheme" />
+        <activity
+            android:name=".ManuallyAddBudgetHistory"
+            android:theme="@style/PopupTheme" />
+        <activity
+            android:name=".AddToBudget"
+            android:theme="@style/PopupTheme"/>
+        <activity android:name=".MenuOptions"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppBackground"
+    tools:context="com.budget.lefevre.easybudget.SingleAccountDisplay">
+
+    <TextView
+        android:id="@+id/SAD_account"
+        android:textAlignment="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        style="@style/CustomTextViewTheme"
+        android:text="@string/SAD_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/SAD_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        style="@style/CustomTextViewTheme"
+        android:text="@string/SAD_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SAD_account" />
+
+    <Button
+        android:id="@+id/SAD_depositWithdraw"
+        style="@style/CustomButtonTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:onClick="depositWithdraw"
+        android:text="@string/SAD_depWith"
+        app:layout_constraintBottom_toTopOf="@+id/SAD_transfer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/SAD_deleteSingleAccount" />
+
+    <Button
+        android:id="@+id/SAD_deleteSingleAccount"
+        style="@style/CustomButtonTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:onClick="deleteSingleAccount"
+        android:text="@string/SAD_delete"
+        app:layout_constraintBottom_toTopOf="@+id/SAD_transfer"
+        app:layout_constraintEnd_toStartOf="@+id/SAD_depositWithdraw"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/SAD_transfer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="transferMoney"
+        android:text="@string/SAD_transfer"
+        style="@style/CustomButtonTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/SAD_historyListView"
+        style="@style/CustomListTheme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/SAD_depositWithdraw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SAD_amount"
+        tools:listitem="@layout/layout_history_display" />
+
+</android.support.constraint.ConstraintLayout>

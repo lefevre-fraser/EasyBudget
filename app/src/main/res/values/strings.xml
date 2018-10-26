@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Easy Budget</string>
+    <string name="account_name">Account Name</string>
+    <string name="account_amount">$ 0.00</string>
+    <string name="new_account">Add a New Account</string>
+    <string name="save_button">Save New Account</string>
+    <string name="new_account_text">Account Name</string>
+    <string name="starting_balance">Balance</string>
+    <string name="AD_signOut">Sign Out</string>
+    <string name="AD_transfer">Transfer</string>
+    <string name="AD_budgetPanel">Budget Panel</string>
+    <string name="ANA_resetBudget">Reset All Budgets</string>
+    <string name="ANA_newBudget">Create New\nBudget</string>
+    <string name="CNB_amount">Budget Amount</string>
+    <string name="CNB_complete">Create Budget</string>
+    <string name="DW_amount">Amount</string>
+    <string name="DW_complete">Complete Action</string>
+    <string name="DW_reason">Reason</string>
+    <string name="M_signIn">Sign In</string>
+    <string name="M_delete">Delete Account</string>
+    <string name="TM_from">From:</string>
+    <string name="TM_to">To:</string>
+    <string name="TM_amount">Amount:</string>
+    <string name="moneyHint">0.00</string>
+    <string name="TM_complete">Complete Transfer</string>
+    <string name="LHD_history">History</string>
+    <string name="confirm">Yes</string>
+    <string name="deny">No</string>
+    <string name="accountsListString">Accounts List</string>
+    <string name="M_welcomeScreen">Welcome To\nEasy Budgeting</string>
+    <string name="LSS_spinnerHint">Spinner Item</string>
+    <string name="BP_totalBudgetLeft">Total Budget Left</string>
+    <string name="SBD_deleteButton">Delete\nBudget</string>
+    <string name="AD_totalMoney">Total Money</string>
+    <string name="CPU_confirmationDialog">Confirmation Dialog</string>
+    <string name="CNB_budgetName">Budget Name</string>
+    <string name="DW_accountName">Account Name</string>
+
+    <string name="OM_createNewBudgetString">New Budget</string>
+    <string name="OM_signInString">Sign In</string>
+    <string name="OM_deleteAccountString">Delete Account</string>
+    <string name="OM_SignOutString">Sign Out</string>
+    <string name="OM_budgetPanelString">Budget Panel</string>
+    <string name="OM_transferMoneyString">Transfer Money</string>
+    <string name="OM_addNewAccountString">Add New Account</string>
+
+    <string name="HE_account_name">Account Name</string>
+    <string name="HE_amountTransferred">Transfer Amount</string>
+    <string name="HE_reason">reason</string>
+    <string name="HE_save">Save</string>
+    <string name="HE_cancel">Cancel</string>
+    <string name="HE_amount">Amount</string>
+
+    <string name="HET_save">Save</string>
+    <string name="HET_amount">Amount</string>
+    <string name="HET_to">To:</string>
+    <string name="HET_from">From:</string>
+    <string name="HET_cancel">Cancel</string>
+    <string name="HET_accountFrom">From Account</string>
+    <string name="HET_accountTo">To Account</string>
+
+    <string name="SAD_account">Account Name</string>
+    <string name="SAD_amount">Total Balance</string>
+    <string name="SAD_depWith">Deposit/Withdraw</string>
+    <string name="SAD_delete">Delete This Account</string>
+    <string name="SAD_transfer">Transfer</string>
+
+    <string name="SBD_changeBudgetAmount">Change\nAmount</string>
+    <string name="SBD_name">Budget Name</string>
+    <string name="SBD_budgetAmount">Budget Amount</string>
+    <string name="SBD_balanceLeft">Balance Left</string>
+    <string name="SBD_resetButton">Reset\nBudget</string>
+    <string name="SBD_addManualHistory">Manually\nAdd</string>
+
+    <string name="SVC_valueToChange">New Amount</string>
+    <string name="SVC_save">Save</string>
+    <string name="SVC_cancel">Cancel</string>
+
+    <string name="MADH_reason">reason</string>
+    <string name="MADH_amount">amount</string>
+    <string name="MADH_cancel">Cancel</string>
+    <string name="MADH_save">Save</string>
+
+    <string name="ATB_addToBudget">Add this expense to a budget?</string>
+    <string name="ATB_continue">Continue</string>
+</resources>

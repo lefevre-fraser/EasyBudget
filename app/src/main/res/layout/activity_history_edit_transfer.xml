@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@drawable/foreground_border"
+    style="@style/AppBackground"
+    tools:context=".HistoryEditTransfer">
+
+    <TextView
+        android:id="@+id/HET_accountFrom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        style="@style/CustomTextViewTheme2"
+        android:text="@string/HET_accountFrom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/HET_textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/HET_accountTo"
+        style="@style/CustomTextViewTheme2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/HET_accountTo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/HET_textView2"
+        app:layout_constraintTop_toTopOf="@+id/HET_textView2" />
+
+    <TextView
+        android:id="@+id/HET_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/HET_from"
+        style="@style/CustomTextViewTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/HET_textView2"
+        style="@style/CustomTextViewTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/HET_to"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HET_textView" />
+
+    <TextView
+        android:id="@+id/HET_textView3"
+        style="@style/CustomTextViewTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/HET_amount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HET_textView2" />
+
+    <EditText
+        android:id="@+id/HET_transferAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="@string/moneyHint"
+        android:inputType="numberDecimal"
+        style="@style/CustomEditTextTheme"
+        app:layout_constraintBaseline_toBaselineOf="@+id/HET_textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/HET_textView3" />
+
+    <Button
+        android:id="@+id/HET_save"
+        style="@style/CustomButtonTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:onClick="HET_onSveButtonClick"
+        android:text="@string/HET_save"
+        app:layout_constraintEnd_toStartOf="@+id/HET_cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HET_transferAmount" />
+
+    <Button
+        android:id="@+id/HET_cancel"
+        style="@style/CustomButtonTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:onClick="HET_onCancelButtonClick"
+        android:text="@string/HET_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/HET_save"
+        app:layout_constraintTop_toBottomOf="@+id/HET_transferAmount" />
+
+</android.support.constraint.ConstraintLayout>

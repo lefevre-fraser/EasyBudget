@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppBackground"
+    tools:context="com.budget.lefevre.easybudget.TransferMoneyActivity">
+
+    <Spinner
+        android:id="@+id/TM_nameSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        style="@style/SpinnerTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TM_textView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/layout_simple_spinner" />
+
+    <Spinner
+        android:id="@+id/TM_nameSpinner2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        style="@style/SpinnerTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TM_textView2"
+        app:layout_constraintTop_toTopOf="@+id/TM_textView2"
+        tools:listitem="@layout/layout_simple_spinner" />
+
+    <TextView
+        android:id="@+id/TM_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/TM_from"
+        style="@style/CustomTextViewTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TM_textView2"
+        style="@style/CustomTextViewTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/TM_to"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TM_textView" />
+
+    <TextView
+        android:id="@+id/TM_textView3"
+        style="@style/CustomTextViewTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/TM_amount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TM_textView2" />
+
+    <EditText
+        android:id="@+id/TM_transferAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="@string/moneyHint"
+        android:inputType="numberDecimal"
+        style="@style/CustomEditTextTheme"
+        app:layout_constraintBaseline_toBaselineOf="@+id/TM_textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TM_textView3" />
+
+    <Button
+        android:id="@+id/TM_completeTransfer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="completeTransfer"
+        android:text="@string/TM_complete"
+        style="@style/CustomButtonTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TM_transferAmount" />
+
+</android.support.constraint.ConstraintLayout>

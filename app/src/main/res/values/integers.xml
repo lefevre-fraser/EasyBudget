@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="ADD_TO_BUDGET">201</integer>
+    <integer name="DELETE_SINGLE_ACCOUNT">110</integer>
+    <integer name="CHANGE_HISTORY">111</integer>
+</resources>
